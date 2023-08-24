@@ -1,1 +1,82 @@
-#include Tests
+#include "ui/menudef.h"
+
+{
+	assetGlobalDef 
+	{
+		consoleFont "fonts/consoleFont" 18		// font
+		smallFont "fonts/smallFont" 12			// font
+		font "fonts/normalFont" 16				// font
+		bigFont "fonts/bigFont" 24				// font
+		extraBigFont "fonts/extraBigFont" 32	// font
+		boldFont "fonts/boldFont" 30			// font
+
+		cursor "ui/assets/3_cursor3"			// cursor	
+//		gradientBar "ui/assets/gradientbar2.tga"	// gradient bar
+//		itemFocusSound "sound/misc/menu2.wav"	
+					// sound for item getting focus (via keyboard or mouse )
+
+		fadeClamp 1.0				// sets the fadeup alpha
+		fadeCycle 1					// how often fade happens in milliseconds
+		fadeAmount 0.1				// amount to adjust alpha per cycle
+		
+		shadowColor 0.1 0.1 0.1 0.25			// shadow color
+	}
+
+	menuDef 
+	{
+		name "main"
+//		background "menuback_cw"		// Spinning Circle Background
+//		fullScreen MENU_TRUE				
+		fullScreen MENU_TRUE
+		rect 0 0 640 480				// Size and position of the menu
+		focusColor UI_FOCUS_COLOR			// Menu focus color for text and items
+		soundloop ""
+					
+		onOpen 
+		{ 
+//			setitemcolor fadebox backcolor 0 0 0 1; 
+			close mods_menu;
+			close options_multi;
+			play "music_mainmenu";
+//			fadeout fadebox ;
+			uiScript stopRefresh ;
+			exec "cg_drawfps 0"; 
+		}
+		
+		onESC 
+		{ 
+//			open quit_popmenu 
+//			close main
+			close mods_menu;
+			close options_multi;
+			ingameclose main
+//			open quit_popmenu 
+		}
+		
+		// Temp full screen backdrop image
+/*
+		itemDef 
+		{
+			name main_back
+			style WINDOW_STYLE_SHADER
+			rect 0 0 640 480
+			background "main_back"
+			visible 1
+			decoration
+		}
+*/
+		#include "ui_mp/menu_background.menu"		
+////////// GAMETYPE //////////////////////////////////////////////////////// 
+	
+		itemDef 
+		{
+			name ast_backround
+			style WINDOW_STYLE_SHADER 
+			rect 0 0 640 480
+			background "ui_mp/assets/main_backround.dds"
+			visible	1
+			decoration
+		}
+
+
+/*
