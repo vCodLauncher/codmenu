@@ -33,19 +33,6 @@ mouse_over,,misc/mouse_over.wav,0.65,,,,,,menu,,,,,menu,
 mouse_click,,misc/mouse_click.wav,0.65,,,,,,menu,,,,,menu
 
 
-# In-Game Tracks by Brejax,,,,,,,,,,,,,,
-music1,1,music/music1.mp3,1.00,,,,,,music,streamed,,,,menu
-music2,1,music/music2.mp3,1.00,,,,,,music,streamed,,,,menu
-music3,1,music/music3.mp3,1.00,,,,,,music,streamed,,,,menu
-music4,1,music/music4.mp3,1.00,,,,,,music,streamed,,,,menu
-music5,1,music/music5.mp3,1.00,,,,,,music,streamed,,,,menu
-music6,1,music/music6.mp3,1.00,,,,,,music,streamed,,,,menu
-music7,1,music/music7.mp3,1.00,,,,,,music,streamed,,,,menu
-music8,1,music/music8.mp3,1.00,,,,,,music,streamed,,,,menu
-music9,1,music/music9.mp3,1.00,,,,,,music,streamed,,,,menu
-music10,1,music/music10.mp3,1.00,,,,,,music,streamed,,,,menu
-
-
 
 #Ambient Tracks,,,,,,,,,,,,,,
 ambient_burnville,,ambient/amb_burnville_ext.mp3,0.75,,,,,,local,streamed,,looping,,burnville
