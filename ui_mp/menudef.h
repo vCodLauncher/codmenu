@@ -1,4 +1,4 @@
-#define ITEM_TYPE_TEXT			0	// simple text 
+#define ITEM_TYPE_TEXT			0	// verry simple text 
 #define ITEM_TYPE_BUTTON		1	// button, basically text with a border 
 #define ITEM_TYPE_RADIOBUTTON		2	// toggle button, may be grouped 
 #define ITEM_TYPE_CHECKBOX		3	// check box
